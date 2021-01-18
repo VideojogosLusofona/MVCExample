@@ -1,0 +1,8 @@
+[submodule "ConsoleMVC/Common"]
+	path = ConsoleMVC/Common
+	url = https://github.com/VideojogosLusofona/MVCExample.git
+	branch = common
+[submodule "UnityMVC/Assets/Scripts/Common"]
+	path = UnityMVC/Assets/Scripts/Common
+	url = https://github.com/VideojogosLusofona/MVCExample.git
+	branch = common
