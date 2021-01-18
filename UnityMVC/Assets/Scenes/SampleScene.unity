@@ -642,6 +642,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   counterContainer: {fileID: 11400000, guid: 2ffd85cdb3dd4a5dc8d4d9081817ac29, type: 2}
+  textVanishDuration: 2.5
 --- !u!1 &1862604782
 GameObject:
   m_ObjectHideFlags: 0
@@ -791,7 +792,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: New Text
+  m_Text: Hit max clicks!
 --- !u!222 &1954724703
 CanvasRenderer:
   m_ObjectHideFlags: 0
