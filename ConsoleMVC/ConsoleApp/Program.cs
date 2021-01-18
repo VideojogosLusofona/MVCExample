@@ -13,7 +13,7 @@ namespace MVCExample.ConsoleApp
             {
                 Counter counter = new Counter(count);
                 Controller controller = new Controller(counter);
-                ConsoleView view = new ConsoleView(controller, counter);
+                IConsoleView view = new ConsoleView(controller, counter);
 
                 controller.Run(view);
             }

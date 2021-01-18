@@ -3,7 +3,7 @@ using MVCExample.Common;
 
 namespace MVCExample.ConsoleApp
 {
-    public class ConsoleView
+    public class ConsoleView : IConsoleView
     {
         private IController controller;
 

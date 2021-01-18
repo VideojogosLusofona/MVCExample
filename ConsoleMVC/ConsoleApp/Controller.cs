@@ -17,7 +17,7 @@ namespace MVCExample.ConsoleApp
             counter.IncrementCount();
         }
 
-        public void Run(ConsoleView view)
+        public void Run(IConsoleView view)
         {
             running = true;
             view.Start();
