@@ -7,9 +7,7 @@ namespace MVCExample.ConsoleApp
     {
         private static void Main(string[] args)
         {
-            int count;
-
-            if ((args?.Length ?? 0) > 0 && int.TryParse(args[0], out count))
+            if ((args?.Length ?? 0) > 0 && int.TryParse(args[0], out int count))
             {
                 Counter counter = new Counter(count);
                 Controller controller = new Controller(counter);

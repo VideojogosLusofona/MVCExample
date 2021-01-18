@@ -5,7 +5,7 @@ namespace MVCExample.ConsoleApp
 {
     public class ConsoleView : IConsoleView
     {
-        private IController controller;
+        private readonly IController controller;
 
         public ConsoleView(IController controller, Counter counter)
         {
@@ -43,7 +43,7 @@ namespace MVCExample.ConsoleApp
 
         public void Finish()
         {
-            Console.WriteLine("=== Bye! ===");
+            Console.WriteLine("\n=== Bye! ===");
         }
 
         private void UpdateMessage()
