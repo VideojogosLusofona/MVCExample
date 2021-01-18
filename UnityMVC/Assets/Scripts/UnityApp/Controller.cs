@@ -1,8 +1,9 @@
 ﻿using UnityEngine;
+using MVCExample.Common;
 
 namespace MVCExample.UnityApp
 {
-    public class Controller : MonoBehaviour
+    public class Controller : MonoBehaviour, IController
     {
         [SerializeField]
         private CounterContainer counterContainer;
