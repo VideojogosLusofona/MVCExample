@@ -1,11 +1,13 @@
 ﻿using System;
+using MVCExample.Common;
 
 namespace ConsoleApp
 {
-    class Program
+    public static class Program
     {
-        static void Main(string[] args)
+        private static void Main(string[] args)
         {
+            Counter counter = new Counter(3);
             Console.WriteLine("Hello World!");
         }
     }
