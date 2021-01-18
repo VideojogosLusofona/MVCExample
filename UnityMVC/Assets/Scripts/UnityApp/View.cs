@@ -1,18 +1,36 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
+using UnityEngine.UI;
 
-public class View : MonoBehaviour
+namespace MVCExample.UnityApp
 {
-    // Start is called before the first frame update
-    void Start()
+    public class View : MonoBehaviour
     {
-        
-    }
+        [SerializeField]
+        private CounterContainer counterContainer;
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        private void Awake()
+        {
+
+        }
+
+        private void Update()
+        {
+
+        }
+
+        private void UpdateMessage()
+        {
+
+        }
+
+        private void OnEnable()
+        {
+            counterContainer.Counter.HitMaxCount += UpdateMessage;
+        }
+
+        private void OnDisable()
+        {
+            counterContainer.Counter.HitMaxCount -= UpdateMessage;
+        }
     }
 }

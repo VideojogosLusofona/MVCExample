@@ -204,7 +204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 53554405}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 355129923}
+        m_TargetAssemblyTypeName: MVCExample.UnityApp.Controller, Assembly-CSharp
+        m_MethodName: IncrementAction
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &53554405
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -272,7 +284,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0b86f2e157848c84992d63c2356bf420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  counterContainer: {fileID: 0}
+  counterContainer: {fileID: 11400000, guid: 2ffd85cdb3dd4a5dc8d4d9081817ac29, type: 2}
 --- !u!4 &355129924
 Transform:
   m_ObjectHideFlags: 0
@@ -629,6 +641,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69cc43656bf9d14a3ab46dc1db6aed2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  counterContainer: {fileID: 11400000, guid: 2ffd85cdb3dd4a5dc8d4d9081817ac29, type: 2}
 --- !u!1 &1862604782
 GameObject:
   m_ObjectHideFlags: 0
