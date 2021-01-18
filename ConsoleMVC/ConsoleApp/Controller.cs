@@ -5,6 +5,7 @@ namespace MVCExample.ConsoleApp
     public class Controller : IController
     {
         private readonly Counter counter;
+        private bool running;
 
         public Controller(Counter counter)
         {
@@ -18,12 +19,18 @@ namespace MVCExample.ConsoleApp
 
         public void Run(ConsoleView view)
         {
-
+            running = true;
+            view.Start();
+            while (running)
+            {
+                view.GetInput();
+            }
+            view.Finish();
         }
 
         public void Quit()
         {
-
+            running = false;
         }
     }
 }
